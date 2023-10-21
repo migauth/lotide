@@ -9,12 +9,15 @@ const assertEqual = function(actual, expected) {
 const tail = function(arr) {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
-    if (i !== arr[0]) {
-      newArr.push(i);
+    if (i !== 0) {
+      newArr.push(arr[i]);
     }
   }
   return newArr;
 };
+
+const result = tail(["Hello", "Lighthouse", "Labs"]);
+assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words);
