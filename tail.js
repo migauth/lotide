@@ -7,19 +7,18 @@ const assertEqual = function(actual, expected) {
 };
 
 const tail = function(arr) {
-  let newArr = [];
-  newArr = arr.slice(1);
-  return newArr;
+  return arr.slice(1);
 };
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 assertEqual(words.length, 3);
-console.log(tail(words));
 const none = [];
 tail(none);
 assertEqual(none.length, 0);
-console.log(tail(none));
 const one = [1];
 tail(one);
-console.log(tail(one));
 assertEqual(one.length, 1);
+
+assertEqual(tail(words).length, 2);
+assertEqual(tail(one).length, 0);
+assertEqual(tail(words)[0], "Lighthouse");
