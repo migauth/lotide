@@ -16,11 +16,6 @@ const tail = function(arr) {
   return newArr;
 };
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
-
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
 assertEqual(words.length, 3);
 const none = [];
 tail(none);
