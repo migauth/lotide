@@ -33,3 +33,9 @@ const flatten = function(arr) {
 };
 
 console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
+console.log(flatten([6, 8, [3, 4, 7, 9], 5, [6, 8, 8]])) 
+console.log(flatten([6, [6, [6, 7]]])) 
+
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+assertArraysEqual(flatten([6, 8, [3, 4, 7, 9], 5, [6, 8, 8]]), [6, 8, 3, 4, 7, 9, 5, 6, 8, 8]);
+assertArraysEqual(flatten([6, [6, [6, 7]]]), [6, 6, 6, 7]);
