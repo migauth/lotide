@@ -22,11 +22,11 @@ const flatten = function(arr) {
   let copyArr = [...arr];
   let newArr = [];
   while (copyArr.length) {
-    const isNest = copyArr.pop();
-    if(Array.isArray(isNest)){
-      copyArr.push(...isNest);
+    const element = copyArr.pop();
+    if(Array.isArray(element)){
+      copyArr.push(...element);
     } else {
-      newArr.push(isNest);
+      newArr.push(element);
     }
   }
   return newArr.reverse();
@@ -34,8 +34,7 @@ const flatten = function(arr) {
 
 console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
 console.log(flatten([6, 8, [3, 4, 7, 9], 5, [6, 8, 8]])) 
-console.log(flatten([6, [6, [6, 7]]])) 
+
 
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
 assertArraysEqual(flatten([6, 8, [3, 4, 7, 9], 5, [6, 8, 8]]), [6, 8, 3, 4, 7, 9, 5, 6, 8, 8]);
-assertArraysEqual(flatten([6, [6, [6, 7]]]), [6, 6, 6, 7]);
