@@ -35,7 +35,11 @@ const letterPositions = function(sentence) {
 
 console.log(letterPositions("lighthouse in the house"));
 
-assertArraysEqual(letterPositions("hello").e, [1]); //will pass
-assertArraysEqual(letterPositions("hello").e, [2]); //will fail
-assertArraysEqual(letterPositions("lighthouse in the house").e, [9, 16, 22]); // will pass
+
+const result1 = letterPositions("hello");
+assertArraysEqual(result1.e, [1]); //will pass
+assertArraysEqual(result1.e, [2]); //will fail
+
+const result2 = letterPositions("lighthouse in the house");
+assertArraysEqual(result2.e, [9, 16, 22]); // will pass
 
