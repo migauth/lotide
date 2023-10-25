@@ -21,3 +21,7 @@ const countLetters = function (sentence) {
 };
 
 console.log(countLetters("lighthouselabs"));
+
+const countResult = countLetters('lighthouselabs');
+assertEqual(countResult['l'], 2);
+assertEqual(countResult['h'], 1);
