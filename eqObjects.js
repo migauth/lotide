@@ -18,6 +18,27 @@ const eqArrays = function (arr1, arr2) {
   return true;
 }
 
+// const eqObjects = function (object1, object2) {
+//   const keysArray1 = Object.keys(object1);
+//   const count1 = keysArray1.length;
+//   const keysArray2 = Object.keys(object2);
+//   const count2 = keysArray2.length;
+//   if (count1 !== count2) {
+//     return false;
+//   }
+//   for (const key in object1) {
+//     const checkArr1 = Array.isArray(object1[key]);
+//     const checkArr2 = Array.isArray(object2[key]);
+//     if (object1[key] === object2[key]) {
+//       return true;
+//     } else if (checkArr1 === true && checkArr2 === true) {
+//       return eqArrays(object1[key], object2[key]);
+//     } else {
+//       return false;
+//     }
+//   }
+// }
+
 const eqObjects = function (object1, object2) {
   const keysArray1 = Object.keys(object1);
   const count1 = keysArray1.length;
@@ -29,13 +50,12 @@ const eqObjects = function (object1, object2) {
   for (const key in object1) {
     const checkArr1 = Array.isArray(object1[key]);
     const checkArr2 = Array.isArray(object2[key]);
-    if (object1[key] === object2[key]) {
-      return true;
-    } else if (checkArr1 === true && checkArr2 === true) {
+    if (checkArr1 === true && checkArr2 === true) {
       return eqArrays(object1[key], object2[key]);
-    } else {
+    } else if (object1[key] !== object2[key]) {
       return false;
     }
+    return true;
   }
 }
 
