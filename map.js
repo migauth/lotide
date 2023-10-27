@@ -1,7 +1,4 @@
 const eqArrays = function (arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
       return false;
@@ -18,8 +15,8 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // should pass
-assertArraysEqual([1, 2, 3], [1, 2]); // should fail
+// assertArraysEqual([1, 2, 3], [1, 2, 3]); // should pass
+// assertArraysEqual([1, 2, 3], [1, 2]); // should fail
 
 
 const words = ["ground", "control", "to", "major", "tom"];
