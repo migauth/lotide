@@ -44,4 +44,6 @@ const assertObjectsEqual = function(actual, expected) {
 
 assertObjectsEqual({a:[1, 2, 3], b:2}, {a:[1, 2, 3], b:2})
 assertObjectsEqual({b:2}, {a:[1, 2, 3], b:2})
+assertObjectsEqual({function(){}}, {function(){}})
+  
   
