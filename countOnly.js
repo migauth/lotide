@@ -1,3 +1,5 @@
+// The assertEqual function takes two parameters and compares them. It will return an assertion passed message if the arguments are the same, and a fail message if they are not.
+
 const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`🟢🟢(*ΦωΦ*)🟢🟢-------> Yay! Assertion passed: ${actual} === ${expected}`);

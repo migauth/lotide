@@ -1,3 +1,5 @@
+// The assertEqual function takes two parameters and compares them. It will return an assertion passed message if the arguments are the same, and a fail message if they are not.
+
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🟢🟢🟢 Assertion passed: ${actual} === ${expected}`);
@@ -6,9 +8,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const tail = function(arr) {
-  return arr.slice(1);
-};
+const tail = arr => arr.slice(1);
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 assertEqual(words.length, 3);
