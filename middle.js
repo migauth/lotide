@@ -1,23 +1,4 @@
-const eqArrays = function (arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-}
-
-const assertArraysEqual = function (actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`🍀🍀🍀 Assertion passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❗️❗️❗️ Assertion failed: ${actual} !== ${expected}`);
-  }
-};
-
+//The middle function returns the middle value in an array. Will return the middle value of an odd array, and 2 middle values in an even array.
 const middle = function (arr) {
   const copyArr = [...arr];
   const newArr = [];
@@ -36,14 +17,4 @@ const middle = function (arr) {
   return newArr;
 }
 
-
-console.log(middle([1])) // => []
-console.log(middle([1, 2])) // => []
-console.log(middle([1, 2, 3])) // => [2]
-console.log(middle([1, 2, 3, 4, 5])) // => [3]');
-console.log(middle([1, 2, 3, 4])) // => [2, 3]);
-console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
-
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+module.exports = middle;
