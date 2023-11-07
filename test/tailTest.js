@@ -17,4 +17,4 @@ const test2 = tail(one);
 assertEqual(test2.length, 0);
 
 const test3 = tail(words)[0]
-assertEqual(test3, "Lighthouse");
+assertEqual(test3, "Lighthouse"); //Tests that the tail function is correctly returning all but the first element of the array.
