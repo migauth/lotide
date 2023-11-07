@@ -4,7 +4,7 @@ const assert = require('chai').assert;
 const middle = require('../middle')
 
 describe("#middle", () => {
-  it("When there is only one value in array it will return undefined", () => {
+  it("Returns an empty array for a single-element array", () => {
     assert.deepEqual(middle([1]), [])
   })
   it("The middle value of an odd array is [2], the tester value is [2]", () => {
