@@ -13,4 +13,10 @@ describe("#middle", () => {
   it("The middle value of an even array is [3, 4] the tester value is [3, 4]", () => {
     assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
   })
+  it("Make sure the original array was not altered by the middle function", () => {
+    const words = ["hello", "world", "lighthouse"];
+    const result = middle(words);
+    assert.deepEqual(result, ["world"]);
+    assert.strictEqual(words.length, 3);
+  });
 })
