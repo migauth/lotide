@@ -9,7 +9,7 @@ const middle = function (arr) {
       return newArr;
     }
     if (i === mid && (copyArr.length % 2 === 0)) {
-      newArr.push(copyArr[element - 1], copyArr[element])
+      newArr.push(element - 1, element)
     } else if (i === mid) {
       newArr.push(element);
     }
