@@ -1,3 +1,4 @@
+// Import assertArraysEqual function for testing
 const assertArraysEqual = require('../assertArraysEqual');
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]); // Compairing two identical arrays. Will return pass.

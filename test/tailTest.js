@@ -1,4 +1,6 @@
+// Import assertEqual function for testing
 const assertEqual = require('../assertEqual');
+// Import tail function for testing
 const tail = require('../tail')
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
