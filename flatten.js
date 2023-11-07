@@ -24,18 +24,18 @@ const assertArraysEqual = function (actual, expected) {
 
 const flatten = (arr) => {
   const copyArr = [...arr]; //Creates a copy of the argument array
-  const newArray = []; //Creates an empty array
+  const newArr = []; //Creates an empty array
 
   for (const element of copyArr) { //Loops through each element of argument array
     if (Array.isArray(element)) { //Checks to see if the element is an array
       for (const nested of element) {
-        newArray.push(nested); //Adds element to new array unnested
+        newArr.push(nested); //Adds element to new array unnested
       }
     } else {
-      newArray.push(element); //Adds the remining elements of argument array
+      newArr.push(element); //Adds the remining elements of argument array
     }
   }
-  return newArray;
+  return newArr;
 };
 
 
