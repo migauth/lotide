@@ -10,6 +10,11 @@ const one = [1];
 tail(one);
 assertEqual(one.length, 1);
 
-assertEqual(tail(words).length, 2);
-assertEqual(tail(one).length, 0);
-assertEqual(tail(words)[0], "Lighthouse");
+const test1 = tail(words);
+assertEqual(test1.length, 2);
+
+const test2 = tail(one);
+assertEqual(test2.length, 0);
+
+const test3 = tail(words)[0]
+assertEqual(test3, "Lighthouse");
