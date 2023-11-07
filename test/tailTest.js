@@ -10,3 +10,6 @@ const one = [1];
 tail(one);
 assertEqual(one.length, 1);
 
+assertEqual(tail(words).length, 2);
+assertEqual(tail(one).length, 0);
+assertEqual(tail(words)[0], "Lighthouse");
