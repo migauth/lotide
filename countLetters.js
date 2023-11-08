@@ -8,6 +8,8 @@ const assertEqual = function (actual, expected) {
   }
 };
 
+//
+
 const countLetters = function (sentence) {
   let result = {};
   for (let letters of sentence) {
