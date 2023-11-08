@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-//findKey will scan the object and return the first key for which the callback returns a truthy value. If no key is found, then it should return undefined.
+//The findKey function will scan the object and return the first key for which the callback returns a truthy value. If no key is found, then it should return undefined.
 
 const findKey = function(object, callback) {
   for (const key in object) { //loop through the object
@@ -41,3 +41,5 @@ console.log(result1);
 assertEqual(result1, "noma")
 console.log(result2);
 assertEqual(result2, undefined)
+
+module.exports = findKey;
