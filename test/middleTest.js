@@ -1,7 +1,7 @@
-// // Import chai for testing
+//Import chai for testing
 const assert = require('chai').assert;
 
-// Import middle function for testing
+//Import middle function for testing
 const middle = require('../middle')
 
 describe("#middle", () => {

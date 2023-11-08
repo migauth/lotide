@@ -1,7 +1,7 @@
-// Import chai for testing
+//Import chai for testing
 const assert = require('chai').assert;
 
-// Import tail function for testing
+//Import tail function for testing
 const tail = require('../tail')
 
 describe("#tail", () => {

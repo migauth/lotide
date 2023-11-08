@@ -1,4 +1,4 @@
-//The flatten function will take an array with nested arrays (one level deep) and flatten them into a single array with one layer.
+// The flatten function will take an array with nested arrays (one level deep) and flatten them into a single array with one layer.
 
 const flatten = (arr) => {
   const copyArr = [...arr]; //Creates a copy of the argument array

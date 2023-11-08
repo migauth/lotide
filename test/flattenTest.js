@@ -1,4 +1,4 @@
-// // Import chai for testing
+//Import chai for testing
 const assert = require('chai').assert;
 
 //Import flatten function for testing

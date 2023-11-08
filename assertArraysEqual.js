@@ -1,7 +1,7 @@
 // Import eqArrays function for comparing arrays
 const eqArrays = require('./eqArrays');
 
-//The assertArraysEqual function checks if two arrays arrays match. It will return an assertion passed message if the arrays are the same, and a fail message if they are not.
+// The assertArraysEqual function checks if two arrays arrays match. It will return an assertion passed message if the arrays are the same, and a fail message if they are not.
 
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
