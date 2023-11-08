@@ -1,14 +1,5 @@
-const eqArrays = function (arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-}
+// Import eqArrays function for comparing arrays
+const eqArrays = require('./eqArrays');
 
 const eqObjects = function (object1, object2) {
   const oneKeyArray = Object.keys(object1);
@@ -32,6 +23,8 @@ const eqObjects = function (object1, object2) {
  return true;
 }
 
+//The assertOjbectsEqual function takes two object properties and compares them. It will return an assertion passed message if the properties are the same, and a fail message if they are not.
+
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
 
@@ -46,4 +39,4 @@ assertObjectsEqual({a:[1, 2, 3], b:2}, {a:[1, 2, 3], b:2})
 assertObjectsEqual({b:2}, {a:[1, 2, 3], b:2})
 assertObjectsEqual({function(){}}, {function(){}})
   
-  
+module.exports = assertObjectsEqual;
