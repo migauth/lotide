@@ -1,4 +1,5 @@
-//The middle function returns the middle value in an array. Will return the middle value of an odd array, and 2 middle values in an even array.
+// The middle function returns the middle value in an array. Will return the middle value of an odd array, and 2 middle values in an even array.
+
 const middle = function (arr) {
   const copyArr = [...arr];
   const newArr = [];

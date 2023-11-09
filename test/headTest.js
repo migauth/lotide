@@ -1,6 +1,7 @@
-//Import chai for testing
+// Import chai for testing
 const assert = require('chai').assert;
-//Import head function for testing
+
+// Import head function for testing
 const head   = require('../head')
 
 describe("#head", () => {

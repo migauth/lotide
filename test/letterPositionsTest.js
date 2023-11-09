@@ -1,23 +1,12 @@
-//Import chai for testing
+// Import chai for testing
 const assert = require('chai').assert;
 
-//Import letterPositions function for testing
-const letterPositions = require('..letterPositions/')
+// Import letterPositions function for testing
+const letterPositions = require('../letterPositions')
 
 describe("#letterPositions", () => {
-  it("returns 1 for [1, 2, 3]", () => {
-    assert.strictEqual(head([1, 2, 3]), 1);
+  it("returns {h:[0], e:[1], l:[2,3], o:[4]} for 'hello", () => {
+    assert.deepEqual(letterPositions('hello'), {h:[0], e:[1], l:[2,3], o:[4]});
   });
   
 })
-
-
-// console.log(letterPositions("lighthouse in the house"));
-
-
-// const result1 = letterPositions("hello");
-// assertArraysEqual(result1.e, [1]); //will pass
-// assertArraysEqual(result1.e, [2]); //will fail
-
-// const result2 = letterPositions("lighthouse in the house");
-// assertArraysEqual(result2.e, [9, 16, 22]); // will pass

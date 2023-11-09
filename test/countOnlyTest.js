@@ -1,7 +1,7 @@
-//Import chai for testing
+// Import chai for testing
 const assert = require('chai').assert;
 
-//Import countOnly function for testing
+// Import countOnly function for testing
 const countOnly = require('../countOnly')
 
 describe("#countOnly", () => {

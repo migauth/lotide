@@ -1,10 +1,7 @@
-// Import eqArrays function for comparing arrays
-const eqArrays = require('./eqArrays');
-
-//Import eqObjects function for comparing objects
+// Import eqObjects function for comparing objects
 const eqObjects = require('./eqObjects')
 
-//The assertOjbectsEqual function takes two object properties and compares them. It will return an assertion passed message if the properties are the same, and a fail message if they are not.
+// The assertOjbectsEqual function takes two object properties and compares them. It will return an assertion passed message if the properties are the same, and a fail message if they are not.
 
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;

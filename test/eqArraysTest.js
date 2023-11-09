@@ -1,4 +1,7 @@
+// Import eqArrays for testing
 const eqArrays = require('../eqArrays');
+
+// Import assertEqual for testing
 const assertEqual = require('../assertEqual');
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // Testing two identical arrays. Will return pass.

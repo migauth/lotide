@@ -1,7 +1,7 @@
-//Import chai for testing
+// Import chai for testing
 const assert = require('chai').assert;
 
-//Import findKeyByValue for testing
+// Import findKeyByValue for testing
 const findKeyByValue = require ('../findKeyByValue')
 
 describe("#findKeyByValue", () => {

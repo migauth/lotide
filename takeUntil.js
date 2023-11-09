@@ -18,10 +18,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-// assertArraysEqual([1, 2, 3], [1, 2, 3]); // should pass
-// assertArraysEqual([1, 2, 3], [1, 2]); // should fail
-
-
+//The takeUntil function takes an array as the first parameter and returns a new array up to where the callback specifies
 const takeUntil = function(array, callback){
   const results = [];
   for (const item of array) {

@@ -1,7 +1,7 @@
-//Imports eqArrays
+// Imports eqArrays
 const eqArrays = require('./eqArrays')
 
-//Compares two objects. Will return true if they are the same, and false if they are not.
+// Compares two objects. Will return true if they are the same, and false if they are not.
 const eqObjects = function (object1, object2) {
   const oneKeyArray = Object.keys(object1);
   const twoKeyArray = Object.keys(object2);

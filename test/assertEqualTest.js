@@ -1,3 +1,4 @@
+// Import assertEqual function for testing
 const assertEqual = require('../assertEqual');
 
 assertEqual("Lighthouse Labs", "Lighthouse Labs"); //Will return pass

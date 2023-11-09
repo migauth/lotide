@@ -1,4 +1,4 @@
-//
+//The letterPositions function returns an object with keys of each letter, and an array with the indices of each occuring letter as a value.
 
 const letterPositions = function(sentence) {
   const result = {};
@@ -14,15 +14,5 @@ const letterPositions = function(sentence) {
   }
   return result;
 }
-
-console.log(letterPositions("lighthouse in the house"));
-
-
-const result1 = letterPositions("hello");
-assertArraysEqual(result1.e, [1]); //will pass
-assertArraysEqual(result1.e, [2]); //will fail
-
-const result2 = letterPositions("lighthouse in the house");
-assertArraysEqual(result2.e, [9, 16, 22]); // will pass
 
 module.exports = letterPositions;

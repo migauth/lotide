@@ -1,4 +1,4 @@
-//The head function returns the first element of an array.
+// The head function returns the first element of an array.
 
 const head = arr => arr[0];
 

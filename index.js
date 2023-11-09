@@ -1,4 +1,4 @@
-//Import all lotide functions
+// Import all lotide functions
 
 const head = require('./head');
 const tail = require('./tail');
@@ -17,7 +17,7 @@ const letterPositions = require('./letterPositions');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
 
-//Export all lotide functions
+// Export all lotide functions
 
 module.exports = {
   head,

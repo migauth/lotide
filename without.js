@@ -18,6 +18,8 @@ const assertArraysEqual = function (actual, expected) {
   }
 };
 
+// The without function takes an array as the first parameter and returns a new array without the specified value in the second parameter
+
 const without = function (source, itemsToRemove) {
   let newSource = [...source];
   let newArr = [];
