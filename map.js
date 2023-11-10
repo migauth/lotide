@@ -1,28 +1,4 @@
-const eqArrays = function (arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-}
-
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`🍀🍀(*ΦωΦ*)🍀🍀 Yay! Assertion passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❗️❗️(ノಠ益ಠ)ノ彡┻━┻ NOPE! ❗️❗️ Assertion failed: ${actual} !== ${expected}`);
-  }
-};
-
-// assertArraysEqual([1, 2, 3], [1, 2, 3]); // should pass
-// assertArraysEqual([1, 2, 3], [1, 2]); // should fail
-
-
-const words = ["ground", "control", "to", "major", "tom"];
+// The map function takes an array as the first parameter and returns a new array based on the second callback parameter
 
 const map = function(array, callback) {
   const results = [];
@@ -32,8 +8,4 @@ const map = function(array, callback) {
   return results;
 }
 
-const results1 = map(words, word => word[0]);
-console.log(results1);
-
-assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
-assertArraysEqual(results1, [ 'r', 'c', 't', 'm', 't' ]);
+module.exports = map;
