@@ -5,8 +5,9 @@ const without = function (source, itemsToRemove) {
   let newArr = []; //empty array
   for (let i = 0; i < itemsToRemove.length; i++) { //loop for the length of itemsToRemove
     let sourceLength = source.length;
-    for (let j = 0; j < sourceLength; j++) {
-      if (itemsToRemove[i] === source[j]) {
+    for (let j = 0; j < sourceLength; j++) { //loop thrpugh the source array
+      if (itemsToRemove[i] === source[j]) { //if itemToRemove matches a value in source array
+        //add the remaining values to a new array without the matching value
         newArr = newSource.slice(0, j).concat(newSource.slice(j + 1, sourceLength));
       }
     }

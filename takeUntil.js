@@ -2,11 +2,11 @@
 
 const takeUntil = function(array, callback){
   const results = [];
-  for (const item of array) {
-    if (!callback(item)) {
-      results.push(item);
+  for (const item of array) { //loop through the array
+    if (!callback(item)) { //filter through the array to find false value
+      results.push(item); //add values up to that value's index
     } else {
-      break
+      break //stop the loop
     }
   }
   return results;
